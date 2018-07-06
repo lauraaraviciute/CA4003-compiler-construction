@@ -1,0 +1,25 @@
+MULTIPLY:	
+	begin 
+	if	(x < 0 && y >= 0) goto label1
+	label1:
+		minus_sign	= true
+		x	= -x
+		result	= 0
+	while	(y > 0) goto label2
+	label2:
+		result =  result + 3
+		y =  y - 1
+	if	(minus_sign == true) goto label3
+	label3:
+		result	= -result
+		return result
+		pop 12
+	end 
+MAIN:
+	begin 
+		arg_1	= -6
+		arg_2 =  five
+		param	arg_1
+		param	arg_2
+		result	=	call multiply, 2
+	end

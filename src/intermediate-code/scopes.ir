@@ -1,0 +1,13 @@
+VAR	i
+TEST_FN:	
+	begin 
+		i	= 2
+		return x
+		pop 8
+	end 
+MAIN:
+	begin 
+		i	= 1
+		param	i
+		i	=	call test_fn, 1
+	end
